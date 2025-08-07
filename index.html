@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Data Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Industrial Data Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="summary-panel">
+      <h2>Summary Panel</h2>
+      <p>Average Temperature: <span id="avg-temp"></span> °C</p>
+      <p>Max Pressure: <span id="max-pressure"></span> kPa</p>
+    </section>
+
+    <section class="charts">
+      <h2>Data Visualizations</h2>
+      <canvas id="temperatureChart"></canvas>
+      <canvas id="machineUsageChart"></canvas>
+    </section>
+
+    <section class="alerts">
+      <h2>System Alerts</h2>
+      <ul id="alert-list"></ul>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
